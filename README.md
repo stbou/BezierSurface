@@ -1,6 +1,7 @@
 # BezierSurface
 openFrameworks
 
+![gitHub_1](https://user-images.githubusercontent.com/74576298/162117933-61f96c71-5226-4279-a104-2a611d926bae.png)
 
 
 Procedure to execute the project --> 
