@@ -16,41 +16,41 @@ void ofApp::setup(){
  
     // initialisation du gui
     gui.setDefaultWidth(300);
-    gui.setup("Selection point controle");   
+    gui.setup("Check point selection");   
     gui.setPosition(ofGetWindowWidth() - 310, 10);    
 
     point_1.addListener(this, &ofApp::buttonSelectionPointControle_1);
-    gui.add(point_1.setup("Bas gauche"));
+    gui.add(point_1.setup("Down left"));
     point_2.addListener(this, &ofApp::buttonSelectionPointControle_2);
-    gui.add(point_2.setup("Bas milieu gauche"));
+    gui.add(point_2.setup("Down center left"));
     point_3.addListener(this, &ofApp::buttonSelectionPointControle_3);
-    gui.add(point_3.setup("Bas milieu droit"));
+    gui.add(point_3.setup("Down center right"));
     point_4.addListener(this, &ofApp::buttonSelectionPointControle_4);
-    gui.add(point_4.setup("Bas droit"));
+    gui.add(point_4.setup("Down right"));
     point_5.addListener(this, &ofApp::buttonSelectionPointControle_5);
-    gui.add(point_5.setup("Haut gauche"));
+    gui.add(point_5.setup("Up left"));
     point_6.addListener(this, &ofApp::buttonSelectionPointControle_6);
-    gui.add(point_6.setup("Haut milieu gauche"));
+    gui.add(point_6.setup("Up center left"));
     point_7.addListener(this, &ofApp::buttonSelectionPointControle_7);
-    gui.add(point_7.setup("Haut milieu droit"));
+    gui.add(point_7.setup("Up center right"));
     point_8.addListener(this, &ofApp::buttonSelectionPointControle_8);
-    gui.add(point_8.setup("Haut droit"));
+    gui.add(point_8.setup("Up right"));
     point_9.addListener(this, &ofApp::buttonSelectionPointControle_9);
-    gui.add(point_9.setup("Gauche milieu bas"));
+    gui.add(point_9.setup("Left center down"));
     point_10.addListener(this, &ofApp::buttonSelectionPointControle_10);
-    gui.add(point_10.setup("Gauche milieu haut"));
+    gui.add(point_10.setup("Left center up"));
     point_11.addListener(this, &ofApp::buttonSelectionPointControle_11);
-    gui.add(point_11.setup("Droit milieu bas"));
+    gui.add(point_11.setup("Right center down"));
     point_12.addListener(this, &ofApp::buttonSelectionPointControle_12);
-    gui.add(point_12.setup("Droit milieu haut"));
+    gui.add(point_12.setup("Rigth center up"));
     point_13.addListener(this, &ofApp::buttonSelectionPointControle_13);
-    gui.add(point_13.setup("Milieu haut gauche"));
+    gui.add(point_13.setup("Center up left"));
     point_14.addListener(this, &ofApp::buttonSelectionPointControle_14);
-    gui.add(point_14.setup("Milieu haut droit"));
+    gui.add(point_14.setup("Center up right"));
     point_15.addListener(this, &ofApp::buttonSelectionPointControle_15);
-    gui.add(point_15.setup("Milieu bas gauche"));
+    gui.add(point_15.setup("Center down left"));
     point_16.addListener(this, &ofApp::buttonSelectionPointControle_16);
-    gui.add(point_16.setup("Milieu bas droit"));
+    gui.add(point_16.setup("Center down right"));
 
     
     // initialisation des valeurs et paramètres de l'image sur la texture du mesh  
@@ -392,8 +392,8 @@ void ofApp::draw(){
 
     // afficher instructions pour l'utilisateur 
     ofSetColor(200);
-    string msg = "Utiliser les fleches pour deplacer les points de controle\nr : reset\nq : afficher les lignes de controle\n"
-            "w : afficher les vertex / triangulation\na : afficher les courbes de Bezier\ns : afficher image en texture";
+    string msg = "Use arrows to move control points\nr : reset\nq : show control lines\n"
+            "w : show vertices / triangulation\na : display bezier curves\ns : display image in texture";
     ofDrawBitmapString(msg, 10, 20);
     
 }
