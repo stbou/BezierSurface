@@ -344,7 +344,7 @@ void ofApp::draw(){
 
     // dessiner les points de contrôle
     ofSetColor(255, 0, 0);
-    if (control_line) {
+    if (control_line) {        
         ofDrawEllipse(ctrl_point1.x, ctrl_point1.y, ctrl_point1.z, radius, radius);
         ofDrawEllipse(ctrl_point2.x, ctrl_point2.y, ctrl_point2.z, radius, radius);
         ofDrawEllipse(ctrl_point3.x, ctrl_point3.y, ctrl_point3.z, radius, radius);
@@ -506,6 +506,8 @@ void ofApp::reset() {
     delta_y = motion_speed;
 
 }
+
+
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){

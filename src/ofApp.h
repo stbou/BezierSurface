@@ -38,7 +38,8 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-		void reset();
+		void reset();		
+
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -82,6 +83,8 @@ class ofApp : public ofBaseApp{
 		ofEasyCam mainCam;
 		ofImage image;
 		ofTexture texture;
+		
+		
 
 		ofPolyline line_renderer_1;
 		ofPolyline line_renderer_2;
