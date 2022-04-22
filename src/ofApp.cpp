@@ -17,7 +17,7 @@ void ofApp::setup(){
     // initialisation du gui
     gui.setDefaultWidth(300);
     gui.setup("Check point selection");   
-    gui.setPosition(ofGetWindowWidth() - 310, 10);    
+    gui.setPosition(ofGetWindowWidth() - 310, 10);
 
     point_1.addListener(this, &ofApp::buttonSelectionPointControle_1);
     gui.add(point_1.setup("Down left"));
@@ -51,8 +51,8 @@ void ofApp::setup(){
     gui.add(point_15.setup("Center down left"));
     point_16.addListener(this, &ofApp::buttonSelectionPointControle_16);
     gui.add(point_16.setup("Center down right"));
+       
 
-    
     // initialisation des valeurs et paramètres de l'image sur la texture du mesh  
     ofDisableArbTex();
     image.load("paper.jpg");
@@ -105,7 +105,7 @@ void ofApp::setup(){
     vertex_bezier_6 = { 2, 6, 10, 14 };
     vertex_bezier_7 = { 8, 9, 10, 11 };
     vertex_bezier_8 = { 4, 5, 6, 7 };
-
+    
     // initialisation de la scène
     reset();
 }
@@ -280,10 +280,11 @@ void ofApp::draw(){
     texture.bind();
     ofSetColor(0, 255, 0);
 
-    // draw mesh en wireframe, les vertex points ou l'image en texture 
+    // draw mesh in wireframe || vertex points || texture image 
     if (draw_wireframe) mainMesh.drawWireframe();
     else mainMesh.drawVertices();
     if (affiche_image) mainMesh.draw();
+    
 
     // dessiner les lignes de contour
     if (control_line) {
@@ -385,7 +386,7 @@ void ofApp::draw(){
         ofDrawEllipse(ctrl_point31.x, ctrl_point31.y, ctrl_point31.z, radius, radius);
         ofDrawEllipse(ctrl_point32.x, ctrl_point32.y, ctrl_point32.z, radius, radius);
 
-    }   
+    }
 
     mainCam.end();
     ofDisableDepthTest();

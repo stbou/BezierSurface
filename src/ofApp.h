@@ -211,4 +211,12 @@ class ofApp : public ofBaseApp{
 		std::vector<float> vertex_bezier_6;
 		std::vector<float> vertex_bezier_7;
 		std::vector<float> vertex_bezier_8;
+
+		ofParameter<int> tessLevelInner, tessLevelOuter;
+		ofShader shader;
+		ofVbo planeVbo;
+		ofPlanePrimitive planeTess;
+		ofVboMesh planeMesh;
+
+
 };
